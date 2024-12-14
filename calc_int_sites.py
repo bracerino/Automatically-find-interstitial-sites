@@ -55,7 +55,7 @@ for interstitial in generator.generate(structure, [interstitial_element_to_place
      frac_coords.append(site.frac_coords)
      frac_coords_dict[idx].append(site.frac_coords)
     idx = idx + 1
-print(f"\nThere are total of {len(unique_int)} unique interstitial sites at\n:{unique_int}, having multiplicity of {unique_mult})\n.If you wish to place interstitials only at certain type of interstitial positions, change the 'which_interstitial_to_us>
+print(f"\nThere are total of {len(unique_int)} unique interstitial sites at\n:{unique_int}, having multiplicity of {unique_mult})\n.If you wish to place interstitials only at certain type of interstitial positions, change the 'which_interstitial_to_use")
 
 if which_interstitial_to_use == 0:
         frac_coords_use = frac_coords
