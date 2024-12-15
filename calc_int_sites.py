@@ -143,7 +143,7 @@ selected_points_moderate = select_spaced_points(frac_coords, n_points=number_of_
 
 
 structure_to_save = Poscar.from_file("POSCAR").structure
-print("Saving structures with FARTHEST distances between interstitials into POSCAR and CIF files...")
+print("Saving structure with FARTHEST distances between interstitials into POSCAR and CIF files...")
 for point in selected_points_farthest:
     structure_to_save.append(
         species=Element(interstitial_element_to_place),
@@ -158,7 +158,7 @@ poscar.write_file("modified_structure_farthest.POSCAR")  # Output POSCAR file
 
 
 structure_to_save = Poscar.from_file("POSCAR").structure
-print("Saving structures with NEAREST distances between interstitials into POSCAR and CIF files...")
+print("Saving structure with NEAREST distances between interstitials into POSCAR and CIF files...")
 for point in selected_points_nearest:
     structure_to_save.append(
         species=Element(interstitial_element_to_place),
