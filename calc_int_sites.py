@@ -136,9 +136,9 @@ def select_spaced_points(frac_coords, n_points=5, mode="farthest", target_value=
 
 
 
-selected_points_farthest = select_spaced_points(frac_coords, n_points=number_of_interstitials_to_insert, mode = 'farthest')
-selected_points_nearest = select_spaced_points(frac_coords, n_points=number_of_interstitials_to_insert, mode = 'nearest')
-selected_points_moderate = select_spaced_points(frac_coords, n_points=number_of_interstitials_to_insert, mode = 'moderate')
+selected_points_farthest = select_spaced_points(frac_coords_use, n_points=number_of_interstitials_to_insert, mode = 'farthest')
+selected_points_nearest = select_spaced_points(frac_coords_use, n_points=number_of_interstitials_to_insert, mode = 'nearest')
+selected_points_moderate = select_spaced_points(frac_coords_use, n_points=number_of_interstitials_to_insert, mode = 'moderate')
 
 
 
