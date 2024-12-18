@@ -42,7 +42,7 @@ unique_int = []
 unique_mult = []
 idx = 0
 frac_coords_dict = {}
-for interstitial in generator.generate(structure, [interstitial_element_to_place]):
+for interstitial in generator.generate(structure, "H"): #Element 'H' is here only to find the available sites in order to prevent error with oxidation states for some elements like noble gases
     frac_coords_dict[idx]=[]
     print(f"\nUnique interstitial site at: {interstitial.site.frac_coords}")
     print(f"It has multiplicity of: {interstitial.multiplicity}")
