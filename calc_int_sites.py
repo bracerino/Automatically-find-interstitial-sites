@@ -19,7 +19,7 @@ which_interstitial_to_use = 0 # The value '0' will consider all found available 
 
 structure = Poscar.from_file("POSCAR").structure
 generator = VoronoiInterstitialGenerator(
-    clustering_tol=1.0,
+    clustering_tol=0.75,
     min_dist=0.5,
 )
 
@@ -29,7 +29,7 @@ uncomment the following two variables.This approach requires the charge density 
 (instead of the structural POSCAR file).
 Ensure you generate the CHGCAR file first by performing a VASP calculation on your initial structure
 
-generator = ChargeInterstitialGenerator( clustering_tol=1.0,
+generator = ChargeInterstitialGenerator( clustering_tol=0.75,
     min_dist=0.5)
 structure =  Chgcar.from_file("CHGCAR")
 """
