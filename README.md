@@ -3,3 +3,6 @@ This Python script automatically identifies interstitial positions in a structur
 
 Find the full tutorial here: 
 https://implant.fs.cvut.cz/automatically-find-interstitial-sites/
+
+GUI for creating point defects (substitutions, vacancies, interstitials) is also available online at: https://xrdlicious-point-defects.streamlit.app/, or at GitHub for local compilation: https://github.com/bracerino/GUI-point-defects
+
